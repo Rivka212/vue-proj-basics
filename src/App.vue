@@ -34,7 +34,9 @@ export default {
     </nav>
   </header>
 
-  <AnimalIndex v-if="route === 'AnimalIndex'"/>
+  <AnimalIndex v-if="route === 'AnimalIndex'" />
+  <SeasonClock v-if="route === 'SeasonClock'" />
+  <CountDown v-if="route === 'CountDown'" />
 
 </template>
 

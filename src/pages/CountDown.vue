@@ -35,11 +35,13 @@ export default {
             this.intervalId = setInterval(() => {
                 if (this.counter <= 1) {
                     clearInterval(this.intervalId)
-                    console.log('Done!')
+                   this.$emit('done')
                 }
                 return this.counter -= 1
             }, 1000)
         },
+    //     unmounted(){
+    //         clearInterval(this.intervalId);        }
     },
 }
 
@@ -47,7 +49,9 @@ export default {
 </script>
 
 <style scoped>
-.conut-down {}
+.conut-down {
+    font-family: monospace;
+}
 
 .red {
     color: rgb(223, 29, 29);

@@ -15,7 +15,11 @@ export default {
   methods: {
     onChange(route) {
       this.route = route
+    },
+    onDone(){
+      console.log('Done!')
     }
+    
   },
   components: {
     AnimalIndex,
@@ -39,7 +43,7 @@ export default {
 
   <AnimalIndex v-if="route === 'AnimalIndex'" />
   <SeasonClock v-if="route === 'SeasonClock'" />
-  <CountDown v-if="route === 'CountDown'" />
+  <CountDown v-if="route === 'CountDown'" @done="onDone"/>
   <WatcherApp v-if="route === 'WatcherApp'" />
 
 </template>

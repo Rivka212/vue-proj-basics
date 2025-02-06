@@ -49,6 +49,7 @@ export default {
 <style scoped>
 .watcher-list {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     align-content: center;
     justify-content: center;
     /* background-color: rgb(104, 104, 139); */

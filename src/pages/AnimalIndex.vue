@@ -1,5 +1,5 @@
 <script>
-import AnimalList from './AnimalList.vue'
+import AnimalList from '../cmps/AnimalList.vue'
 
 export default {
 
